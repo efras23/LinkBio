@@ -4,3 +4,32 @@
     box-sizing: border-box;
     font-family: 'Montserrat', 'arial';
 }
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.logo {
+    width: 160px;
+    height: 160px;
+    background: linear-gradient(90deg, #ffdf00, #009c3b);
+    border-radius: 150px;
+    position: relative;
+}
+
+.logo::after {
+    content: "";
+    width: 150px;
+    height: 150px;
+    background: url("assets/neymar.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 150px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
