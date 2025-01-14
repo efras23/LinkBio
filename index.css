@@ -40,10 +40,11 @@ h1, a {
 }
 
 h1 {
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 50px;
+    line-height: 50px;
     position: relative;
     text-shadow: 3px 3px 3px #bbbbbb;
+    margin-bottom: 30px;
 }
 
 h1::after {
@@ -54,7 +55,7 @@ h1::after {
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    bottom: 3px;
+    bottom: 10px;
     right: -25px;
 }
 
@@ -71,4 +72,69 @@ h1 span::after {
     left: 2.5%;
     bottom: 0px;
     border-radius: 5px;
+}
+
+section .links {
+    min-width: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    min-height: 40px;
+    width: 100%;
+    text-decoration: none;
+    position: relative;
+    color: #ffffff;
+}
+
+a::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #000000;
+    border-radius: 100px;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+a::after {
+    content: "";
+    width: 21px;
+    height: 21px;
+    left: 18px;
+}
+
+.link-youtube::after {
+    background: url("assets/youtube.png");
+    background-size: contain;
+    position: absolute;
+}
+.link-instagram::after {
+    background: url("assets/instagram.png");
+    background-size: contain;
+    position: absolute;
+}
+.link-x::after {
+    background: url("assets/twitter.png");
+    background-size: contain;
+    position: absolute;
+}
+.link-facebook::after {
+    background: url("assets/facebook.png");
+    background-size: contain;
+    position: absolute;
+}
+.link-twitch::after {
+    background: url("assets/twitch.png");
+    background-size: contain;
+    position: absolute;
 }
