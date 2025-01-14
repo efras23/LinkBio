@@ -5,12 +5,17 @@
     font-family: 'Montserrat', 'arial';
 }
 
+h1, a {
+    font-family: "Ysabeau Infant", "Arial";
+}
+
 .banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    gap: 15px;
 }
 
 .logo {
@@ -32,4 +37,38 @@
     position: absolute;
     top: 5px;
     left: 5px;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 40px;
+    position: relative;
+    text-shadow: 3px 3px 3px #bbbbbb;
+}
+
+h1::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url("assets/verificado.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 3px;
+    right: -25px;
+}
+
+h1 span {
+    position: relative;
+}
+
+h1 span::after {
+    content: "";
+    width: 95%;
+    height: 5px;
+    background: linear-gradient(90deg, #ffdf00, #009c3b);
+    position: absolute;
+    left: 2.5%;
+    bottom: 0px;
+    border-radius: 5px;
 }
