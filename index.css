@@ -9,6 +9,8 @@ h1, a {
     font-family: "Ysabeau Infant", "Arial";
 }
 
+/* 1/2 - BANNER */
+
 .banner {
     display: flex;
     flex-direction: column;
@@ -141,4 +143,37 @@ a::after {
 a:hover {
     background: #ffffff;
     color: #000000;
+}
+
+/* 2/2 ESTATÍSTICAS */
+
+.estatisticas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 40px;
+    padding: 0 10px;
+}
+
+th, td {
+    padding: 20px;
+    text-align: center;
+}
+
+td:first-child {
+    min-width: 180px;
+    max-width: 180px;
+}
+
+img {
+    width: 30px;
+}
+
+td div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
 }
